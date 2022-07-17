@@ -8,6 +8,7 @@
 import UIKit
 
 class MovieCollectionViewCell: UICollectionViewCell {
+    
     static let identifier = "\(MovieCollectionViewCell.self)"
     
     @IBOutlet weak var background: UIView!

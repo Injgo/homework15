@@ -13,11 +13,13 @@ class MovieCell: UITableViewCell {
     
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var imdb: UILabel!
+    @IBOutlet weak var moviewImage: UIImageView!
     @IBOutlet weak var isfavouriteButton: UIImageView!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        moviewImage.layer.cornerRadius = 7
         // Initialization code
     }
 

@@ -7,8 +7,8 @@
 
 import Foundation
 
-enum Genre: CaseIterable {
-    case all, comedy, action, drama
+enum Genre:Int, CaseIterable {
+    case all = 0, comedy, action, drama
 }
 
 struct Movie {
@@ -19,23 +19,26 @@ struct Movie {
     let mainActor: String
     var seen: Bool
     var isFavourite: Bool
+    let Img: String
     let description = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
     let genre: Genre
+    
     
 }
 
 struct Movies {
     static var movieList: [Movie] =  [
-        Movie(title: "gamarjoba1", releaseDate: "2020-15-16", imdb: 7.5, mainActor: "davit", seen: true, isFavourite: false, genre: .comedy),
-        Movie(title: "gamarjoba2", releaseDate: "2020-15-16", imdb: 5.5, mainActor: "davit", seen: false, isFavourite: true, genre: .action),
-        Movie(title: "gamarjoba3", releaseDate: "2020-15-16", imdb: 3.5, mainActor: "davit", seen: false, isFavourite: false, genre: .drama),
-        Movie(title: "gamarjoba4", releaseDate: "2020-15-16", imdb: 8.5, mainActor: "davit", seen: true, isFavourite: true, genre: .comedy),
-        Movie(title: "gamarjoba5", releaseDate: "2020-15-16", imdb: 4.5, mainActor: "davit", seen: false, isFavourite: false, genre: .action),
-        Movie(title: "gamarjoba6", releaseDate: "2020-15-16", imdb: 6.5, mainActor: "davit", seen: false, isFavourite: true, genre: .drama),
-        Movie(title: "gamarjoba7", releaseDate: "2020-15-16", imdb: 7.0, mainActor: "davit", seen: false, isFavourite: false, genre: .comedy),
-        Movie(title: "gamarjoba8", releaseDate: "2020-15-16", imdb: 9, mainActor: "davit", seen: false, isFavourite: false, genre: .drama),
-        Movie(title: "gamarjoba9", releaseDate: "2020-15-16", imdb: 5.5, mainActor: "davit", seen: true, isFavourite: false, genre: .action),
-        Movie(title: "gamarjoba10", releaseDate: "2020-15-16", imdb: 8, mainActor: "davit", seen: false, isFavourite: false, genre: .drama)
+        Movie(title: "THE INTOUCHABLES", releaseDate: "2011", imdb: 8.5, mainActor: "François Cluzet", seen: true, isFavourite: false, Img: "Intouchables", genre: .comedy),
+        Movie(title: "3 IDIOTS", releaseDate: "2009", imdb: 8.4, mainActor: "Aamir Khan", seen: false, isFavourite: false, Img: "3idiots" ,genre: .comedy),
+        Movie(title: "DOG", releaseDate: "2022", imdb: 6.5, mainActor: "Channing Tatum", seen: true, isFavourite: true, Img: "dog", genre: .comedy),
+        Movie(title: "AMERICAN ULTRA", releaseDate: "2015", imdb: 6.1, mainActor: "Jesse Eisenberg", seen: false, isFavourite: false, Img: "american_ultra", genre: .comedy),
+        Movie(title: "DADDY'S HOME 2", releaseDate: "2017", imdb: 6.0, mainActor: "John Lithgow", seen: false, isFavourite: false, Img: "daddy's_home", genre: .comedy),
+        Movie(title: "FORTRESS", releaseDate: "2021", imdb: 3.4, mainActor: "Bruce Willis", seen: false, isFavourite: false, Img: "fortress", genre: .action),
+        Movie(title: "GLADIATOR", releaseDate: "2000", imdb: 8.5, mainActor: "Russell Crowe", seen: false, isFavourite: false, Img: "gladiator", genre: .action),
+        Movie(title: "THE MATRIX", releaseDate: "1999", imdb: 8.7, mainActor: "Keanu Reeves", seen: true, isFavourite: false, Img: "matrix", genre: .action),
+        Movie(title: "Schindler's List", releaseDate: "1993", imdb: 8.9, mainActor: "Liam Neeson", seen: true, isFavourite: true, Img: "godfather",genre: .drama),
+        Movie(title: "THE GODFATHER", releaseDate: "1972", imdb: 9.2, mainActor: "Marlon Brando", seen: true, isFavourite: true, Img: "Schindler's_List",genre: .drama),
+
     ]
     
     

@@ -15,7 +15,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BookTexture" translatesAutoresizingMaskIntoConstraints="NO" id="NHx-ar-8PU">
-                    <rect key="frame" x="0.0" y="-4" width="412" height="68"/>
+                    <rect key="frame" x="0.0" y="0.0" width="412" height="60"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Header Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5oq-xa-uA5">
                     <rect key="frame" x="135" y="20" width="142" height="20"/>
@@ -28,12 +28,13 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <accessibility key="accessibilityConfiguration" identifier="MovieHeaderView"/>
             <constraints>
+                <constraint firstItem="NHx-ar-8PU" firstAttribute="top" secondItem="ze5-0D-lQ6" secondAttribute="top" id="7GA-uh-Bqm"/>
                 <constraint firstItem="5oq-xa-uA5" firstAttribute="centerX" secondItem="ze5-0D-lQ6" secondAttribute="centerX" id="9HK-Jh-kb7"/>
                 <constraint firstItem="NHx-ar-8PU" firstAttribute="centerX" secondItem="ze5-0D-lQ6" secondAttribute="centerX" id="9tY-xs-K2R"/>
                 <constraint firstItem="NHx-ar-8PU" firstAttribute="width" secondItem="ze5-0D-lQ6" secondAttribute="width" id="QsY-b7-QQZ"/>
+                <constraint firstAttribute="bottom" secondItem="NHx-ar-8PU" secondAttribute="bottom" id="Vw5-Kp-67Y"/>
                 <constraint firstItem="NHx-ar-8PU" firstAttribute="centerY" secondItem="ze5-0D-lQ6" secondAttribute="centerY" id="bJC-bl-Eko"/>
                 <constraint firstItem="5oq-xa-uA5" firstAttribute="width" secondItem="ze5-0D-lQ6" secondAttribute="width" multiplier="0.345146" id="fsv-dF-mEP"/>
-                <constraint firstItem="NHx-ar-8PU" firstAttribute="height" secondItem="ze5-0D-lQ6" secondAttribute="height" multiplier="1.13333" id="ula-ou-Ckv"/>
                 <constraint firstItem="5oq-xa-uA5" firstAttribute="centerY" secondItem="ze5-0D-lQ6" secondAttribute="centerY" id="xr0-M1-f3S"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
